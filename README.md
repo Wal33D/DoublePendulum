@@ -1,1 +1,1 @@
-[ScreenShot]: Demo.png "Double Pendulum GUI"
+![alt text](Demo.png "ScreenShot")
