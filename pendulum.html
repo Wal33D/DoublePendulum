@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+     <title>Double Pendulum: Soggy Squad</title>
+
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+     <link href='css/pendulum.css' rel='stylesheet' type='text/css'>
+
+     <script src="js/jquery-2.1.1.min.js"></script>
+     <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+     <script src='js/sound.js' type='text/javascript'></script>
+     <script src='js/resizeCanvas.js' type='text/javascript'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <!--UI Controls-->
+    <div class='sidebar'>
+
+        <form id='set_variables_form'>
+
+            <label id="l1" for='mass1'>Size of Ball 1</label>
+            <input id='mass1' max='80' min='1' type='range' value='40'>
+            <label for='mass2'>Size of Ball 2</label>
+            <input  id='mass2' max='80' min='1' type='range' value='40'>
+            <label for='length1'>Length of Pendulum 1</label>
+            <input id='length1' max='200' min='100' type='range' value='150'>
+            <label for='length2'>Length of Pendulum 2</label>
+            <input  id='length2' max='200' min='100' type='range' value='150'>
+            <label for='Phi1'>Angle of Pendulum 2</label>
+            <input  id='Phi1' max='90' min='-90' type='range' value='0'>
+            <label for='Phi2'>Angle of Pendulum 2</label>
+            <input  id='Phi2' max='90' min='-90' type='range' value='0'>
+            <input class='submit-btn' type='submit' value='Start Simulation'>
+
+        </form>
+
+    </div>
+
+    <!--Our Canvas that our script function will use-->
+    <canvas class='canvas'  height='500' id='myCanvas'  width="700"></canvas>
+    <script src='js/pendulum.js' type='text/javascript'></script>
+
+</body>
+</html>
